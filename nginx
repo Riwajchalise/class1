@@ -1,0 +1,14 @@
+server {  
+    listen 80;
+    server_name snake.futurestud.io;
+
+    access_log /var/log/nginx/snake_futurestud_io_access.log;
+    error_log  /var/log/nginx/snake_futurestud_io_error.log;
+
+    root /home/futurestudio/apps/snake;
+    index game.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
