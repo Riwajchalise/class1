@@ -1,17 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Doc</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  table {
+  margin-right: 25%;
+  margin-left: 25%;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 5px solid black;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+caption{
+  font-size: 40px;
+}
+  </style>
 </head>
 <body>
-    <h1>This is main heading</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam impedit dignissimos delectus ad hic ab perspiciatis minima, aperiam dolor asperiores temporibus. Doloremque, aperiam reiciendis libero molestiae esse illo distinctio.</p>
-    <img src="images/image.jpg" alt="This is alt text" style="max-width: 300px;">
-    <br>
-    <a href="http://facebook.com">Facebook Profile</a>
-
+  <table>
+    <caption>
+      This is a sample table
+    </caption>
+    <thead>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Class</th>
+      <th rowspan="2">Roll</th>
+      <th rowspan="2">Phone</th>
+      <th rowspan="2">Email</th>
+      <th rowspan="2">Gender</th>
+      <th colspan="2">Subject</th>
+      <th rowspan="2">Points</th>
+    </tr>
+    <tr>
+      <th>Maths</th>
+      <th>English</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td>Rajan Karki</td>
+      <td>10</td>
+      <td>20</td>
+      <td>98-xxxxx-xx</td>
+      <td>dummy@gmail.com</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>NO</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Rajan Karki</td>
+      <td>10</td>
+      <td>20</td>
+      <td>98-xxxxx-xx</td>
+      <td>dummy@gmail.com</td>
+      <td>Male</td>
+      <td>Yes</td>
+      <td>NO</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Binita K.C.</td>
+      <td>12</td>
+      <td>40</td>
+      <td>98-xxxxx-xx</td>
+      <td>dummy@gmail.com</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Rajesh Hamal</td>
+      <td>10</td>
+      <td>2</td>
+      <td>98-xxxxx-xx</td>
+      <td>dummy@gmail.com</td>
+      <td>Male</td>
+      <td>NO</td>
+      <td>Yes</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Bimala Gharti</td>
+      <td>11</td>
+      <td>24</td>
+      <td>98-xxxxx-xx</td>
+      <td>dummy@gmail.com</td>
+      <td>Female</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>10</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <th colspan="8">
+          Total Points
+        </th>
+        <td>
+          50
+        </td>
+      </tr>
+    </tfoot>
+  </tbody>
+</table>
+<hr>
+<div style="margin-left: 25%;">
+<h1>Style for the table</h1>
+<pre>
+  table {
+    margin-right: 25%;
+    margin-left: 25%;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 5px solid black;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  caption{
+    font-size: 40px;
+  }
+</div>
+</pre>
 </body>
 </html>
