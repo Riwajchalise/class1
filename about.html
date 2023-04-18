@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Page</title>
+	<style>
+        .about-section {
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+		}
+		
+		.about-heading {
+			margin-top: 0;
+            text-align: center;
+
+		}
+		
+		.about-image {
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			margin-right: 20px;
+			vertical-align: middle;
+		}
+		
+		.about-content {
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+		}
+		
+		.about-description {
+			margin-top: 0;
+		}
+		
+		.about-contact {
+            display: inline-block;
+			margin-top: 20px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.contact-form {
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		
+		.contact-form h2 {
+			margin-top: 0;
+		}
+		
+		.contact-form form {
+			text-align: left;
+		}
+		
+		.contact-form label {
+			display: block;
+			margin-top: 10px;
+		}
+		
+		.contact-form input[type=text], 
+		.contact-form input[type=email], 
+		.contact-form textarea {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			border: 2px solid #ddd;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		
+		.contact-form textarea {
+			height: 150px;
+		}
+		
+		.contact-form input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		.contact-form input[type=submit]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+
+<div class="about-section">
+		<h1 class="about-heading">About Us</h1>
+		<img class="about-image" src="https://via.placeholder.com/200x200.png?text=Image" alt="Image">
+        <div class="about-contact">
+            <p>Contact Us:</p>
+            <p>Email: info@aboutpage.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+		<div class="about-content">
+            <h2>Description</h2>
+			<p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mi a neque lacinia ultrices vel nec lacus. Donec vitae urna sit amet velit laoreet malesuada. Sed ac sagittis libero. Fusce quis orci metus. </p>
+			<h2>Education</h2>
+            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mi a neque lacinia ultrices vel nec lacus. Donec vitae urna sit amet velit laoreet malesuada. Sed ac sagittis libero. Fusce quis orci metus. </p>
+            <h2>Experience</h2>
+            <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec mi a neque lacinia ultrices vel nec lacus. Donec vitae urna sit amet velit laoreet malesuada. Sed ac sagittis libero. Fusce quis orci metus. </p>
+
+		</div>
+	</div>
+	
+	<div class="contact-form">
+		<h2>Contact Us</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5"></textarea>
+			
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

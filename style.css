@@ -1,0 +1,60 @@
+/* Set a margin of 10 pixels on all four sides */
+.box {
+    margin: 10px;
+  }
+  
+  /* Set a margin of 10 pixels on the top and bottom, and 20 pixels on the left and right */
+  .box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  /* Set a border with a width of 1 pixel, a solid style, and a black color */
+.box {
+    border: 1px solid black;
+  }
+  
+  /* Set a border with a width of 2 pixels, a dotted style, and a red color */
+  .box {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: red;
+  }
+
+  /* Set a border with a width of 1 pixel, a solid style, and a black color */
+.box {
+    border: 1px solid black;
+  }
+  
+  /* Set a border with a width of 2 pixels, a dotted style, and a red color */
+  .box {
+    border-width: 2px;
+    border-style: dotted;
+    border-color: red;
+  }
+
+  /* Set a padding of 10 pixels on all four sides */
+.box {
+    padding: 10px;
+  }
+  
+  /* Set a padding of 10 pixels on the top and bottom, and 20 pixels on the left and right */
+  .box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Set the width and height of an element */
+.box {
+    width: 300px;
+    height: 200px;
+  }
+  
+  .box { 
+    box-sizing: border-box; 
+}
