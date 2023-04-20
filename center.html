@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex method */
+        .center-align{
+            width: 100%;
+            background: red;
+            display: flex;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* grid method */
+        .center-align1{
+            display: grid;
+            place-items: center;
+            background: green;
+            height: 300px;
+        }
+
+        /* position method */
+        .center-align3{
+            position: relative;
+            height: 300px;
+            background: salmon;
+
+        }
+        
+        .center-align3 > p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="center-align">This is center OO</div>
+    <div class="center-align1">This is center OO</div>
+    <div class="center-align3"><p>This is center OO. This is center OOThis is center OOThis is center OOThis is center OOThis is center OOThis is center OOThis is center OO</p></div>
+</body>
+</html>
