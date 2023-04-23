@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: aqua;
+    background-color: #fff;
+    animation-name: change-bg-color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.animated-image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: move-right;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.animated-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+@keyframes move-right {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 66vw;
+    }
+}
+
+@keyframes change-bg-color {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: rgba(164, 176, 239, 0.795);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
