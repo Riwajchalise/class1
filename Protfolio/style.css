@@ -1,0 +1,236 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+    list-style: none;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: rgb(175, 255, 175);
+  }
+  
+  .download{
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .download:hover{
+    background-color: #5e5e5e;
+  }
+  
+  /* Hero section styles */
+ 
+
+  .hero {
+    background: url('https://www.apetogentleman.com/wp-content/uploads/2018/06/top-male-models.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fade-in 1s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  /* About section styles */
+  .about {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  .about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Education section styles */
+  .education {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .education h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .education ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .education li {
+    margin-bottom: 10px;
+  }
+  
+  /* Projects section styles */
+  .projects {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  .projects h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .projects ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .projects li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact button:hover {
+    background-color: #555;
+  }
+  
+  /* Back to top button styles */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
