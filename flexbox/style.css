@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    /* height: 400px; */
+    display: flex;
+    /* flex-direction: column; */
+    background: #f4f4f4;
+    /* Always on the main axis start, center, end, space around, space between */
+    justify-content: space-between; 
+    /* Always on the cross axis */
+    align-items: start;
+    /* flex-wrap: wrap; */
+
+}
+
+.item{
+    flex-basis: 100px;
+    height: 100px;
+    background-color: #254de4;
+    margin: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.item:nth-of-type(1) {
+    
+}
+.item:nth-of-type(2) {
+
+}
+.item:nth-of-type(3) {
+
+}
