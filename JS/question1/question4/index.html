@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="question2.css">
+</head>
+
+<body>
+    <div id="quiz"></div>
+    <button type="button" onclick="checkAnswers()">Submit</button>
+    <div id="result"></div>
+
+
+    <script>
+        // Set up an array of question objects with the question, options and answer properties
+        const questions = [
+            {
+                question: "What is the capital of France?",
+                options: ["Paris", "London", "Berlin", "Madrid"],
+                answer: "Paris"
+            },
+            {
+                question: "What is the highest mountain in the world?",
+                options: ["Mount Everest", "K2", "Makalu", "Lhotse"],
+                answer: "Mount Everest"
+            },
+            {
+                question: "What is the largest planet in our solar system?",
+                options: ["Venus", "Saturn", "Jupiter", "Mars"],
+                answer: "Jupiter"
+            }
+        ];
+
+        // Initialize the HTML for the quiz
+        let quizHTML = "";
+
+        // Loop through the questions and create the HTML for each question
+        for (let i = 0; i < questions.length; i++) {
+            // Add the question text
+            quizHTML += "<p>" + questions[i].question + "</p>";
+
+            // Add the answer options
+            for (let j = 0; j < questions[i].options.length; j++) {
+                quizHTML += "<label>";
+                quizHTML += "<input type='radio' name='question" + i + "' value='" + questions[i].options[j] + "'>";
+                quizHTML += questions[i].options[j];
+                quizHTML += "</label>";
+            }
+        }
+
+        // Display the HTML for the quiz
+        document.getElementById("quiz").innerHTML = quizHTML;
+
+        function checkAnswers() {
+            // Keep track of the number of correct answers
+            let numCorrect = 0;
+
+            // Loop through the questions and check the selected answer against the correct answer
+            for (let i = 0; i < questions.length; i++) {
+                const selectedAnswer = document.querySelector("input[name='question" + i + "']:checked").value;
+
+                if (selectedAnswer == questions[i].answer) {
+                    numCorrect++;
+                }
+            }
+
+            // Display the result message
+            const resultHTML = "You got " + numCorrect + " out of " + questions.length + " questions correct.";
+            document.getElementById("result").innerHTML = resultHTML;
+        }
+
+    </script>
+</body>
+
+</html>

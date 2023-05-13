@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Prompt the user for a number
+        var number = prompt("Enter a number: ");
+
+        // Convert the input to a number
+        number = parseInt(number);
+
+        // Initialize variables
+        var factorial = 1;
+
+        // Calculate the factorial using a loop
+        for (var i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        // Display the factorial
+        document.write("The factorial of " + number + " is: " + factorial);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" name="numberInput" min="0" max="100">
+        <button type="button" onclick="checkNumber()">Check</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function checkNumber() {
+            // Get the value of the number input
+            const number = document.getElementById("numberInput").value;
+
+            // Check if the number is greater than 10
+            if (number > 10) {
+                // Display a message if the number is greater than 10
+                document.getElementById("result").innerHTML = "Wow, that's a big number!";
+            } else {
+                // Display a different message if the number is less than or equal to 10
+                document.getElementById("result").innerHTML = "That's not a very big number.";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
