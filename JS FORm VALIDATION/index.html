@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="myForm" action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script>
+        const form = document.getElementById('myForm');
+        const nameInput = form.elements['name'];
+        const emailInput = form.elements['email'];
+        const passwordInput = form.elements['password'];
+        const confirmPasswordInput = form.elements['confirmPassword'];
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (!nameInput.value) {
+                alert('Please enter your name');
+                return;
+            }
+
+            if (!emailInput.value || !emailRegex.test(emailInput.value)) {
+                alert('Please enter a valid email');
+                return;
+            }
+
+            if (!passwordInput.value || !passwordRegex.test(passwordInput.value)) {
+                alert('Password must be at least 8 characters and contain at least one letter and one number');
+                return;
+            }
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                alert('Passwords do not match');
+                return;
+            }
+
+            form.submit();
+        });
+
+    </script>
+</body>
+
+</html>
