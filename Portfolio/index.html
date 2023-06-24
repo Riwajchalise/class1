@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">
+      <a href="#"><img src="https://riwajchalise.com.np/assets/img/logo.png" alt="Logo"></a>
+    </div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Portfolio</a></li>
+      <li><a href="#projects">Contact</a></li>
+      <li><a href="#projects" class="download"><i class="fa-solid fa-download">Download CV</a></i></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Hero section with parallax effect and animation -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to my portfolio</h1>
+      <p>My name is John Doe and I am a <span class="animation-text">developer</span></p>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere mollis odio, at pulvinar urna aliquam eget. Nam nec ullamcorper enim, vel rhoncus arcu. Proin eget odio non mauris aliquam fermentum ut in turpis. Nullam euismod urna vitae velit pretium iaculis. Nam a malesuada nisl, at sodales libero.</p>
+  </section>
+
+  <!-- Education section -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Science in Computer Science - University of XYZ</li>
+      <li>Web Development Certificate - ABC Institute</li>
+    </ul>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1 - Lorem ipsum dolor sit amet</li>
+      <li>Project 2 - Consectetur adipiscing elit</li>
+      <li>Project 3 - Sed posuere mollis odio</li>
+    </ul>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact" >
+    <form id="contactForm" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+  
+      <input type="submit" value="Submit">
+    </form>
+  
+  </section>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+  
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="animation.js"></script>
+    <script src="validate.js"></script>
+    <script src="script.js"></script>
+
+
+  </body>
+  </html>
+  
