@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded HTml</title>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium natus voluptatem aperiam voluptate
+        porro aut, ullam eaque minus laborum eum expedita veritatis rem non! Impedit expedita totam mollitia ut.</p>
+</body>
+
+<script>
+    const parentDocument = window.parent.document;
+    const parentHeading = parentDocument.getElementById("heading")
+    console.log(parentHeading);
+
+    const para = document.getElementById("para");
+
+    para.textContent=para.textContent +parentHeading.textContent;
+
+
+</script>
+
+</html>
